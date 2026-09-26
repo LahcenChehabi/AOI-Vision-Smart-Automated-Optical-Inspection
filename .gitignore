@@ -1,0 +1,33 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python caching and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Log files
+*.log
+
+# Large AI Models
+keras_model.h5
+
+#Large tensorflow file 
+*.whl
