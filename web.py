@@ -19,15 +19,15 @@ except ImportError:
     from tensorflow import keras
 
 # ==========================================
-# CAMERA SETTINGS  (edit these two lines)
+# CAMERA SETTINGS  
 # ==========================================
-CAMERA_INDEX = None       # None = AUTO (first camera that works) | or force one: 0, 1, 2, 3 ...
-CAMERA_BACKEND = "DSHOW"  # "DSHOW" | "MSMF" | "ANY"  (try another one if the webcam does not open)
+CAMERA_INDEX = None       # None = AUTO (first camera that works)
+CAMERA_BACKEND = "DSHOW"  # "DSHOW" | "MSMF" | "ANY"  
 
 # ==========================================
 # ARDUINO SETTINGS
 # ==========================================
-ARDUINO_PORT = None       # None = AUTO-detect | or force one: "COM3", "COM5" ...
+ARDUINO_PORT = None       # None = AUTO-detect
 
 # ==========================================
 # 1. PAGE CONFIG + MODERN CSS
@@ -162,7 +162,7 @@ section[data-testid="stSidebar"] label p{color:var(--txt); font-size:13px; font-
 
 
 _v = tuple(int(x) for x in st.__version__.split(".")[:2])
-FIT = {"width": "stretch"} if _v >= (1, 50) else {"use_container_width": True}   # works on old + new Streamlit
+FIT = {"width": "stretch"} if _v >= (1, 50) else {"use_container_width": True}   
 
 
 def H(s):
